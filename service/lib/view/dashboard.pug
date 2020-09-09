@@ -1,0 +1,14 @@
+extends layout.pug
+
+prepend body
+  block dashboard
+    if uuid
+      .request= uuid
+    else
+      .request 00000000-0000-0000-0000-000000000000
+append body
+  block dashboard
+    if uuid
+      .request= uuid
+    else
+      .request 00000000-0000-0000-0000-000000000000

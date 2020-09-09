@@ -1,0 +1,22 @@
+doctype html
+
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='description' content='audibene hypertext application framework')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon' href='/lib/icon.png')
+    link(rel='icon' href='/lib/favicon.ico')
+    link(rel='stylesheet' href='/lib/browser.css' type='text/css' media='all')
+    block head
+      title= title || 'audibene'
+  body
+    noscript You need to enable JavaScript to run this app.
+    block body
+      div(id='root')
+        h1= heading || 'audibene'
+    block debug
+      pre(id='debug') #{JSON.stringify(debug, null, 2)}
+    block ecma
+      script(src='/lib/runtime.js')
+      script(type='text/javascript') console.log('🤖')

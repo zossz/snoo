@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "name": "snoo",
+    "version": 0
+  },
+  "users": [
+    {
+      "id": 0,
+      "active": true,
+      "created": 0,
+      "cron": "0",
+      "email": "",
+      "name": "",
+      "subreddits": "football,Jokes,technology"
+    }
+  ]
+}
